@@ -88,7 +88,7 @@ export default class BlogPostCard extends Component {
                         <Box className="content-box info-card-left reserve blog-box-brown-2">
                             <Box
                                 className="boxie"
-                                style={{ display: "grid", gridTemplateRows: "60% 50%" }}>
+                                style={{ display: "grid", gridTemplateRows: "60% 50%", position: "relative"}}>
                                 <Heading
                                     className="blog-title"
                                     dangerouslySetInnerHTML={{
@@ -105,7 +105,7 @@ export default class BlogPostCard extends Component {
                                         marginTop: '0.4vw',
                                     }}
                                     src={"/static/assets/line-sm.png"}
-                                    className="break-line"
+                                    className="break-line break-line-asset-update"
                                 />
                             </Box>
                             <Text

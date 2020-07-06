@@ -112,7 +112,7 @@ export default class extends Component {
                             <Grid columns={["100%"]} justifyContent="between" align="center">
                                 <Box>
                                     <Heading
-                                        style={{ marginBottom: "30px", lineHeight: "60px" }}
+                                        style={{ marginBottom: "22px !important", lineHeight: "60px" }}
                                         dangerouslySetInnerHTML={{
                                             __html: acf.info_card_right_title_1,
                                         }}

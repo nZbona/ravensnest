@@ -67,7 +67,7 @@ export default class extends Component {
                 heroBannerText={acf.hero_banner_text}
 
                 shouldShowBannerText={true}
-                isMobile={this.state.isMobile}
+                isMobile={this.state.isMobile} 
                 
                 bookNowURL={footer.acf.book_now_link}
                 bookNowURLStyle={{ marginBottom: '50px' }}

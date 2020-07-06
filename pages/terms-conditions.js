@@ -40,7 +40,7 @@ export default class extends Component {
                     <Button
                         href="/"
                         className="buy-now-color"
-                        label="BACK TO HOMEE"
+                        label="BACK TO HOME"
                     />
                 </Box>
 

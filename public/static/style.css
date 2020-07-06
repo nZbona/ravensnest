@@ -1362,11 +1362,12 @@ div.load-more-box {
         padding-bottom: 33%;
     }
     h2.blog-title {
-        font-size: 6vw;
-        line-height: 30px;
+        font-size: 5vw;
+        line-height: 5vw;
     }
     span.blog-post-colors {
         font-size: 3vw;
+        margin-top: 4%;
     }
     a.read,
     button.read {
@@ -1380,12 +1381,11 @@ div.load-more-box {
 }*/
 @media (max-width: 400px) {
     h2.blog-title {
-        font-size: 8vw;
-        line-height: 8vw;
+        font-size: 5vw;
+        line-height: 5vw;
     }
     span.blog-post-colors {
-        font-size: 6vw;
-        margin-top: -10%;
+        font-size: 3vw;
     }
     a.read,
     button.read {
@@ -1397,6 +1397,7 @@ div.load-more-box {
     div.blog-box {
         padding-bottom: 50% !important;
     }
+    
 }
 @media (max-width: 490px) {
     div.blog-template-2 {
@@ -1414,6 +1415,10 @@ div.load-more-box {
     }
     div.around {
         padding-bottom: 2%;
+    }
+    .break-line-asset-update{
+        position: absolute;
+        bottom: -5px;
     }
 }
 /*accomodation*/

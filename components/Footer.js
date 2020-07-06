@@ -13,7 +13,7 @@ import Link from 'next/link';
 export default class Footer extends Component {
     render() {
         const { data } = this.props;
-
+        const date = new Date();
 
         return (
             <Box
@@ -23,11 +23,18 @@ export default class Footer extends Component {
                     <Grid columns={'25vw'} gap="large" className="footer first-grid">
                         {/* first text (contact) */}
                         <Box style={{ width: '100%' }}>
-                            <Text
-                                dangerouslySetInnerHTML={{
-                                    __html: data.contact
-                                }}
-                            />
+                        <Text
+                                // dangerouslySetInnerHTML={{
+                                //     __html: data.contact
+                                // }}
+                            >
+                                <p>Quick Contact <br></br>
+                                Raven's Nest | Sub Piatra, Transylvania, Romania <br></br>
+                                Email: contact@ravensnest.eu<br></br>
+                                Copyright © {date.getFullYear()} ravensnest.eu<br></br>
+                                All rights Reserved.<br></br>
+                                </p>
+                            </Text>
                         </Box>
 
 

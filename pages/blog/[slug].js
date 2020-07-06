@@ -22,6 +22,36 @@ export default class extends Component {
         };
     }
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            isMobile: ''
+        };
+    }
+    
+    listener;
+    componentDidMount() {
+
+        this.verifyIfMobile();
+        this.listener = window.addEventListener('resize', this.verifyIfMobile);
+
+    }
+        verifyIfMobile = () => {
+
+            if(window.innerWidth < 769){
+                this.setState({isMobile: true}, () => {
+                    console.log(this.state.isMobile);
+                });
+            }else{
+                this.setState({isMobile: false});
+            }
+        
+    }
+    
+    
+    
+
     render() {
         const { acf } = this.props.page;
         const { footer } = this.props;
@@ -32,7 +62,10 @@ export default class extends Component {
                 heroBanner={acf.hero_banner.url}
                 heroBannerTitle={acf.hero_banner_title}
                 heroBannerText={acf.hero_banner_text}
-                shouldShowBannerText= {true}
+                
+                shouldShowBannerText={true}
+                isMobile={this.state.isMobile}
+
                 bookNowURL={footer.acf.book_now_link}
                 bookNowURLStyle={{ display: "none" }}
                 footerData={footer.acf}>
